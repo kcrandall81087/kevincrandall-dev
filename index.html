@@ -1,35 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Kevin Crandall | Developer Hub</title>
+    <title>Kevin Crandall | Developer Hub</title>
 
-  <meta
-    name="description"
-    content="Live software projects, cloud deployments, and technical experiments built by Kevin Crandall."
-  >
+    <meta
+      name="description"
+      content="Live software projects, cloud deployments, and technical experiments built by Kevin Crandall."
+    >
 
-  <link rel="icon" href="favicon.ico">
-  <link rel="stylesheet" href="assets/css/styles.css">
-</head>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
 
-<body>
+  <body>
+    <header class="site-header">
+      <nav class="site-nav" aria-label="Primary navigation">
+        <div class="nav-links">
+          <a href="index.html" aria-current="page">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="resume.html">Resume</a>
+          <a href="contact.html">Contact</a>
 
-  <header class="site-header">
-    <nav class="site-nav" aria-label="Primary navigation">
-      <div class="nav-links">
-        <a href="#featured-projects">Projects</a>
-        <a href="#infrastructure">Infrastructure</a>
+          <a
+            class="external-nav-link"
+            href="https://github.com/kcrandall81087"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
 
-        <a
-          href="https://kevincrandall.me"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Portfolio
-        </a>
+          <a
+            class="external-nav-link"
+            href="https://kevincrandall.me"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Portfolio
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section id="hero" class="hero">
+        <div class="hero-content">
+          <div class="hero-identity">
+            <p class="eyebrow">Kevin Crandall</p>
+            <p class="hero-label">Developer Hub</p>
+          </div>
+
+          <h1>
+            <span>Building software. Deploying ideas.</span>
+            <span>Solving problems.</span>
+          </h1>
+
+          <p class="hero-description">
+            Live applications, cloud deployments, and technical experiments
+            showcasing the software I build and the technologies I work with.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button primary-button" href="#featured-projects">
+              Explore Projects
+            </a>
+
+            <a class="button secondary-button" href="about.html">
+              About Me
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Projects -->
+      <section id="featured-projects" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Featured Projects</p>
+
+          <h2>Live applications</h2>
+
+          <p>
+            Production-style projects deployed to the cloud and available
+            to explore.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Travlr Getaways -->
+          <article class="project-card">
+            <div class="project-content">
+              <p class="project-status">Live</p>
+
+              <h3>Travlr Getaways</h3>
+
+              <p class="project-description">
+                A full-stack MEAN application featuring a customer-facing
+                travel site, secure Angular administration portal, RESTful API,
+                and MongoDB-backed data services.
+              </p>
+
+              <div class="tech-stack" aria-label="Technologies used">
+                <span>Angular</span>
+                <span>Node.js</span>
+                <span>Express</span>
+                <span>MongoDB Atlas</span>
+                <span>Azure</span>
+                <span>GitHub Actions</span>
+              </div>
+
+              <div class="project-actions">
+                <a
+                  class="button primary-button"
+                  href="https://travlr.kevincrandall.dev"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Launch App
+                </a>
+
+                <a
+                  class="button secondary-button"
+                  href="https://admin.kevincrandall.dev"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Admin Portal
+                </a>
+
+                <a
+                  class="text-link"
+                  href="https://github.com/kcrandall81087/travlr-getaways-enhanced"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View Source
+                </a>
+              </div>
+
+              <p class="project-meta">Last updated: August 2026</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="section-actions">
+          <a class="text-link" href="projects.html">
+            View all projects →
+          </a>
+        </div>
+      </section>
+
+      <!-- Infrastructure -->
+      <section id="infrastructure" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Infrastructure</p>
+
+          <h2>How these projects run</h2>
+
+          <p>
+            The applications showcased here use modern cloud hosting,
+            managed services, secure delivery, and automated deployment
+            workflows.
+          </p>
+        </div>
+
+        <div class="infrastructure-grid">
+          <article class="infrastructure-card">
+            <h3>Cloud Hosting</h3>
+            <p>Azure App Service &amp; Azure Static Web Apps</p>
+          </article>
+
+          <article class="infrastructure-card">
+            <h3>Database</h3>
+            <p>MongoDB Atlas</p>
+          </article>
+
+          <article class="infrastructure-card">
+            <h3>CI/CD</h3>
+            <p>GitHub Actions</p>
+          </article>
+
+          <article class="infrastructure-card">
+            <h3>Security</h3>
+            <p>HTTPS • TLS • Custom Domains</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 Kevin Crandall</p>
+
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
 
         <a
           href="https://github.com/kcrandall81087"
@@ -38,195 +206,17 @@
         >
           GitHub
         </a>
+
+        <a
+          href="https://kevincrandall.me"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Professional Portfolio
+        </a>
       </div>
-    </nav>
-  </header>
+    </footer>
 
-  <main>
-
-    <!-- Hero -->
-    <section id="hero" class="hero">
-      <div class="hero-content">
-
-        <div class="hero-identity">
-          <p class="eyebrow">Kevin Crandall</p>
-          <p class="hero-label">Developer Hub</p>
-        </div>
-
-        <h1>
-          <span>Building software. Deploying ideas.</span>
-          <span>Solving problems.</span>
-        </h1>
-
-        <p class="hero-description">
-          Live applications, cloud deployments, and technical experiments
-          showcasing the software I build and the technologies I work with.
-        </p>
-
-        <div class="hero-actions">
-          <a
-            class="button primary-button"
-            href="#featured-projects"
-          >
-            Explore Projects
-          </a>
-
-          <a
-            class="button secondary-button"
-            href="https://kevincrandall.me"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View Portfolio
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Featured Projects -->
-    <section id="featured-projects" class="section">
-      <div class="section-heading">
-        <p class="eyebrow">Featured Projects</p>
-
-        <h2>Live applications</h2>
-
-        <p>
-          Production-style projects deployed to the cloud and available
-          to explore.
-        </p>
-      </div>
-
-      <div class="projects-grid">
-
-        <!-- Travlr Getaways -->
-        <article class="project-card">
-          <div class="project-content">
-
-            <p class="project-status">Live</p>
-
-            <h3>Travlr Getaways</h3>
-
-            <p class="project-description">
-              A full-stack MEAN application featuring a customer-facing
-              travel site, secure Angular administration portal, RESTful API,
-              and MongoDB-backed data services.
-            </p>
-
-            <div
-              class="tech-stack"
-              aria-label="Technologies used"
-            >
-              <span>Angular</span>
-              <span>Node.js</span>
-              <span>Express</span>
-              <span>MongoDB Atlas</span>
-              <span>Azure</span>
-              <span>GitHub Actions</span>
-            </div>
-
-            <div class="project-actions">
-              <a
-                class="button primary-button"
-                href="https://travlr.kevincrandall.dev"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Launch App
-              </a>
-
-              <a
-                class="button secondary-button"
-                href="https://admin.kevincrandall.dev"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Admin Portal
-              </a>
-
-              <a
-                class="text-link"
-                href="https://github.com/kcrandall81087/travlr-getaways-enhanced"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                View Source
-              </a>
-            </div>
-
-            <p class="project-meta">
-              Last updated: August 2026
-            </p>
-
-          </div>
-        </article>
-
-      </div>
-    </section>
-
-    <!-- Infrastructure -->
-    <section id="infrastructure" class="section">
-      <div class="section-heading">
-        <p class="eyebrow">Infrastructure</p>
-
-        <h2>How these projects run</h2>
-
-        <p>
-          The applications showcased here use modern cloud hosting,
-          managed services, secure delivery, and automated deployment
-          workflows.
-        </p>
-      </div>
-
-      <div class="infrastructure-grid">
-
-        <article class="infrastructure-card">
-          <h3>Cloud Hosting</h3>
-          <p>Azure App Service &amp; Azure Static Web Apps</p>
-        </article>
-
-        <article class="infrastructure-card">
-          <h3>Database</h3>
-          <p>MongoDB Atlas</p>
-        </article>
-
-        <article class="infrastructure-card">
-          <h3>CI/CD</h3>
-          <p>GitHub Actions</p>
-        </article>
-
-        <article class="infrastructure-card">
-          <h3>Security</h3>
-          <p>HTTPS • TLS • Custom Domains</p>
-        </article>
-
-      </div>
-    </section>
-
-  </main>
-
-  <!-- Footer -->
-  <footer class="site-footer">
-    <p>&copy; 2026 Kevin Crandall</p>
-
-    <div class="footer-links">
-      <a
-        href="https://kevincrandall.me"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Portfolio
-      </a>
-
-      <a
-        href="https://github.com/kcrandall81087"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GitHub
-      </a>
-    </div>
-  </footer>
-
-  <script src="assets/js/script.js"></script>
-</body>
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>
