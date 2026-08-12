@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0b1220">
+    <meta name="color-scheme" content="dark">
 
     <title>Kevin Crandall | Developer Hub</title>
 
@@ -18,7 +20,19 @@
   <body>
     <header class="site-header">
       <nav class="site-nav" aria-label="Primary navigation">
-        <div class="nav-links">
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-nav-links"
+          aria-label="Toggle navigation menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-links" id="primary-nav-links">
           <a href="index.html" aria-current="page">Home</a>
           <a href="about.html">About</a>
           <a href="projects.html">Projects</a>
@@ -40,7 +54,7 @@
             target="_blank"
             rel="noopener noreferrer"
           >
-            Portfolio
+            CS Capstone
           </a>
         </div>
       </nav>
@@ -193,28 +207,42 @@
     </main>
 
     <footer class="site-footer">
-      <p>&copy; 2026 Kevin Crandall</p>
 
-      <div class="footer-links">
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
+      <p>
+        &copy; <span id="current-year"></span> Kevin Crandall.
+        All rights reserved.
+      </p>
 
-        <a
-          href="https://github.com/kcrandall81087"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          GitHub
-        </a>
+        <div class="footer-links">
 
-        <a
-          href="https://kevincrandall.me"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Professional Portfolio
-        </a>
-      </div>
+            <a href="index.html">Home</a>
+
+            <a href="about.html">About</a>
+
+            <a href="projects.html">Projects</a>
+
+            <a href="resume.html">Resume</a>
+
+            <a href="contact.html">Contact</a>
+
+            <a
+                href="https://github.com/kcrandall81087"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                GitHub
+            </a>
+
+            <a
+                href="https://kevincrandall.me"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                CS Capstone
+            </a>
+
+        </div>
+
     </footer>
 
     <script src="assets/js/script.js"></script>
