@@ -1736,3 +1736,234 @@ a:focus-visible {
     }
 
 }
+
+/* =========================================================
+   Project Case Studies
+   ========================================================= */
+
+.case-study-hero .page-intro {
+  max-width: 800px;
+}
+
+
+/* Two-column narrative sections */
+
+.case-study-layout {
+  display: grid;
+
+  grid-template-columns:
+    minmax(260px, 0.8fr)
+    minmax(0, 1.4fr);
+
+  gap: 72px;
+  align-items: start;
+}
+
+.case-study-layout .section-heading {
+  margin-bottom: 0;
+}
+
+.case-study-copy {
+  max-width: 760px;
+}
+
+.case-study-copy p {
+  margin: 0 0 22px;
+
+  color: var(--text-muted);
+
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.case-study-copy p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* Role / challenge cards */
+
+.case-study-role-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 20px;
+}
+
+.case-study-card {
+  min-height: 190px;
+
+  padding: 28px;
+
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.03),
+      rgba(255, 255, 255, 0.015)
+    ),
+    var(--surface);
+
+  transition:
+    transform 0.22s ease,
+    border-color 0.22s ease,
+    background 0.22s ease;
+}
+
+.case-study-card:hover {
+  transform: translateY(-4px);
+
+  border-color: var(--border-strong);
+
+  background:
+    rgba(56, 189, 248, 0.045);
+}
+
+.case-study-card h3 {
+  margin: 0;
+
+  font-size: 1.1rem;
+}
+
+.case-study-card p {
+  margin: 12px 0 0;
+
+  color: var(--text-muted);
+
+  line-height: 1.75;
+}
+
+
+/* Architecture */
+
+.architecture-flow {
+  display: grid;
+
+  grid-template-columns:
+    repeat(7, auto);
+
+  align-items: stretch;
+
+  gap: 14px;
+
+  margin-top: 34px;
+}
+
+.architecture-node {
+  min-width: 0;
+
+  padding: 24px;
+
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+
+  background:
+    rgba(255, 255, 255, 0.025);
+}
+
+.architecture-node h3 {
+  margin: 8px 0 0;
+}
+
+.architecture-node p:last-child {
+  margin: 12px 0 0;
+
+  color: var(--text-muted);
+
+  font-size: 0.92rem;
+  line-height: 1.65;
+}
+
+.architecture-arrow {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  color: var(--accent);
+
+  font-size: 1.5rem;
+  font-weight: 700;
+
+  transform: rotate(-90deg);
+}
+
+
+/* Case-study lists */
+
+.case-study-list {
+  margin: 24px 0 0;
+  padding-left: 1.25rem;
+
+  color: var(--text-muted);
+}
+
+.case-study-list li {
+  margin-bottom: 12px;
+
+  line-height: 1.7;
+}
+
+.case-study-list li::marker {
+  color: var(--accent);
+}
+
+
+/* Technology stack */
+
+.case-study-tech {
+  max-width: 900px;
+
+  margin-top: 0;
+}
+
+
+/* =========================================================
+   Case Study Responsive
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+  .case-study-layout {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .case-study-layout .section-heading {
+    max-width: 720px;
+  }
+
+  .architecture-flow {
+    grid-template-columns: 1fr;
+  }
+
+  .architecture-arrow {
+    min-height: 24px;
+
+    transform: none;
+  }
+
+}
+
+
+@media (max-width: 700px) {
+
+  .case-study-role-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .case-study-card {
+    min-height: auto;
+
+    padding: 24px;
+  }
+
+  .architecture-node {
+    padding: 22px;
+  }
+
+}
