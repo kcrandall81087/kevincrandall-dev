@@ -35,7 +35,23 @@
         <div class="nav-links" id="primary-nav-links">
           <a href="index.html">Home</a>
           <a href="about.html">About</a>
-          <a href="projects.html" aria-current="page">Projects</a>
+
+          <div class="nav-item">
+            <a class="nav-link-main" href="projects.html" aria-current="page">Projects</a>
+            <button
+              class="nav-dropdown-toggle"
+              type="button"
+              aria-expanded="false"
+              aria-label="Toggle project case studies"
+              aria-controls="projects-submenu"
+            ></button>
+            <div class="nav-submenu" id="projects-submenu">
+              <a href="projects/travlr.html">Travlr Getaways Case Study</a>
+              <a href="projects/pirate-agent.html">Pirate Intelligent Agent Case Study</a>
+              <a href="projects/developer-hub.html">Developer Hub Case Study</a>
+            </div>
+          </div>
+
           <a href="resume.html">Resume</a>
           <a href="contact.html">Contact</a>
 
@@ -87,8 +103,9 @@
           <h2>Building software that solves problems.</h2>
 
           <p>
-            Projects demonstrating application development, machine learning,
-            automation, and engineering practices.
+            A collection of engineering projects spanning full-stack web
+            development, artificial intelligence, cloud deployment, and
+            modern software engineering practices.
           </p>
         </div>
 
@@ -151,65 +168,105 @@
 
           <!-- Pirate Agent -->
           <article class="featured-project-card">
+
             <div class="featured-project-content">
+
               <p class="project-status">Artificial Intelligence</p>
 
               <h3>Pirate Intelligent Agent</h3>
 
               <p>
-                A reinforcement learning project implementing a Deep Q-Network
-                agent. The project explores neural networks, reward-based learning,
-                experience replay, and autonomous decision making through
-                environment interaction.
+                A deep reinforcement learning project implementing a Deep Q-Network
+                capable of learning autonomous navigation through reward-based
+                training, experience replay, and iterative optimization. Originally
+                developed during CS-370 and enhanced as part of my CS-499 capstone.
               </p>
 
               <div class="tech-stack">
                 <span>Python</span>
                 <span>TensorFlow</span>
-                <span>DQN</span>
+                <span>Deep Q-Network</span>
                 <span>Neural Networks</span>
                 <span>Reinforcement Learning</span>
               </div>
 
               <div class="project-actions">
+
                 <a
                   href="https://github.com/kcrandall81087/Pirate-Intelligent-Agent"
                   class="text-link"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  View Project →
+                  Source Code →
                 </a>
+
+                <a
+                  href="projects/pirate-agent.html"
+                  class="text-link"
+                >
+                  Engineering Case Study →
+                </a>
+
               </div>
+
             </div>
+
           </article>
 
-          <!-- Professional -->
+          <!-- Developer Hub -->
           <article class="featured-project-card">
-            <div class="featured-project-content">
-              <p class="project-status">Professional Engineering</p>
 
-              <h3>Enterprise Automation &amp; AI Solutions</h3>
+            <div class="featured-project-content">
+
+              <p class="project-status">Professional Website</p>
+
+              <h3>Kevin Crandall Developer Hub</h3>
 
               <p>
-                Designing and improving internal software solutions that automate
-                workflows, improve employee experiences, and apply AI-enabled
-                capabilities to solve operational challenges.
+                A responsive professional website designed to showcase software
+                engineering projects, technical experience, engineering case
+                studies, and live applications. Built with modern web standards
+                and hosted on Microsoft Azure.
               </p>
 
               <div class="tech-stack">
-                <span>Automation</span>
-                <span>AI Workflows</span>
-                <span>Enterprise Systems</span>
-                <span>API Integration</span>
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>Azure</span>
+                <span>Accessibility</span>
               </div>
 
               <div class="project-actions">
-                <a href="resume.html" class="text-link">
-                  Professional Experience →
+
+                <a
+                  href="index.html"
+                  class="text-link"
+                >
+                  Live Site →
                 </a>
+
+                <a
+                  href="https://github.com/kcrandall81087/kevincrandall-dev"
+                  class="text-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Source Code →
+                </a>
+
+                <a
+                  href="projects/developer-hub.html"
+                  class="text-link"
+                >
+                  Engineering Case Study →
+                </a>
+
               </div>
+
             </div>
+
           </article>
         </div>
       </section>

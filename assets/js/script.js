@@ -6,6 +6,8 @@ if (yearElement) {
 
 const navToggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelector('.nav-links');
+const projectDropdownToggle = document.querySelector('.nav-dropdown-toggle');
+const projectSubmenu = document.querySelector('.nav-submenu');
 
 if (navToggle && navLinks) {
   const getFocusableElements = () =>
@@ -19,6 +21,14 @@ if (navToggle && navLinks) {
     navLinks.classList.remove('is-open');
     navToggle.classList.remove('is-open');
     navToggle.setAttribute('aria-expanded', 'false');
+
+    if (projectDropdownToggle) {
+      projectDropdownToggle.setAttribute('aria-expanded', 'false');
+    }
+
+    if (projectSubmenu) {
+      projectSubmenu.classList.remove('is-open');
+    }
   };
 
   const openMenu = () => {
@@ -40,6 +50,16 @@ if (navToggle && navLinks) {
 
     openMenu();
   });
+
+  if (projectDropdownToggle && projectSubmenu) {
+    projectDropdownToggle.addEventListener('click', (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+
+      const isOpen = projectSubmenu.classList.toggle('is-open');
+      projectDropdownToggle.setAttribute('aria-expanded', String(isOpen));
+    });
+  }
 
   navLinks.querySelectorAll('a').forEach((link) => {
     link.addEventListener('click', () => {

@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1220">
+  <meta name="color-scheme" content="dark">
+
+  <title>Developer Hub Case Study | Kevin Crandall</title>
+
+  <meta
+    name="description"
+    content="Engineering case study for Kevin Crandall's Developer Hub, a responsive professional website built with HTML, CSS, JavaScript, Azure hosting, accessibility practices, and custom domain infrastructure."
+  >
+
+  <link rel="icon" href="../favicon.ico">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Primary navigation">
+
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="primary-nav-links"
+        aria-label="Toggle navigation menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-links" id="primary-nav-links">
+
+        <a href="../index.html">Home</a>
+        <a href="../about.html">About</a>
+
+        <div class="nav-item">
+          <a
+            class="nav-link-main"
+            href="../projects.html"
+            aria-current="page"
+          >
+            Projects
+          </a>
+
+          <button
+            class="nav-dropdown-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-label="Toggle project case studies"
+            aria-controls="projects-submenu"
+          ></button>
+
+          <div class="nav-submenu" id="projects-submenu">
+            <a href="travlr.html">Travlr Getaways Case Study</a>
+            <a href="pirate-agent.html">Pirate Intelligent Agent Case Study</a>
+            <a href="developer-hub.html">Developer Hub Case Study</a>
+          </div>
+        </div>
+
+        <a href="../resume.html">Resume</a>
+        <a href="../contact.html">Contact</a>
+
+        <a
+          class="external-nav-link"
+          href="https://github.com/kcrandall81087"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
+
+        <a
+          class="external-nav-link"
+          href="https://kevincrandall.me"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          CS Capstone
+        </a>
+
+      </div>
+
+    </nav>
+  </header>
+
+
+  <main>
+
+    <!-- Case Study Hero -->
+    <section class="page-hero case-study-hero">
+
+      <div class="page-hero-content">
+
+        <p class="eyebrow">Engineering Case Study</p>
+
+        <h1>
+          Kevin Crandall Developer Hub
+          <span>Engineering a professional presence.</span>
+        </h1>
+
+        <p class="page-intro">
+          A responsive professional website built to bring together
+          software projects, technical experience, engineering case studies,
+          résumé content, and professional contact information in one
+          cohesive destination.
+        </p>
+
+        <div class="hero-actions">
+
+          <a
+            href="https://kevincrandall.dev"
+            class="button primary-button"
+          >
+            You're Viewing It
+          </a>
+
+          <!-- Replace with the exact repository URL when ready -->
+          <a
+            href="https://github.com/kcrandall81087"
+            class="button secondary-button"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub Profile
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Overview -->
+    <section class="section case-study-section">
+
+      <div class="case-study-layout">
+
+        <div class="section-heading">
+
+          <p class="eyebrow">Overview</p>
+
+          <h2>
+            More than a portfolio page.
+          </h2>
+
+        </div>
+
+        <div class="case-study-copy">
+
+          <p>
+            The Developer Hub was created as a long-term professional home
+            for my software engineering work. Rather than relying on a
+            single résumé, GitHub profile, or academic portfolio, the site
+            brings those pieces together into one cohesive experience.
+          </p>
+
+          <p>
+            The project combines frontend development, responsive design,
+            accessibility, cloud hosting, DNS configuration, custom domains,
+            content strategy, and ongoing software delivery. It is designed
+            to evolve alongside my career rather than remain a static
+            graduation portfolio.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Problem -->
+    <section class="section case-study-section">
+
+      <div class="case-study-layout">
+
+        <div class="section-heading">
+
+          <p class="eyebrow">The Problem</p>
+
+          <h2>
+            Bring multiple professional identities into one place.
+          </h2>
+
+        </div>
+
+        <div class="case-study-copy">
+
+          <p>
+            My professional work was distributed across GitHub repositories,
+            an academic CS capstone portfolio, a traditional résumé, live
+            applications, and professional networking platforms.
+          </p>
+
+          <p>
+            The goal was to create a central destination that could present
+            those resources coherently while still giving each one a clear
+            purpose. The site needed to work equally well for recruiters,
+            hiring managers, engineers, and professional contacts.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- My Role -->
+    <section class="section">
+
+      <div class="section-heading">
+
+        <p class="eyebrow">My Role</p>
+
+        <h2>
+          Design, development, infrastructure, and content.
+        </h2>
+
+        <p>
+          I designed and built the site from the ground up while also
+          managing its hosting, domain configuration, responsive behavior,
+          accessibility, and ongoing content strategy.
+        </p>
+
+      </div>
+
+      <div class="case-study-role-grid">
+
+        <article class="case-study-card">
+
+          <h3>Frontend Development</h3>
+
+          <p>
+            Built the site using semantic HTML, reusable CSS patterns,
+            and lightweight JavaScript rather than introducing a framework
+            where one was not necessary.
+          </p>
+
+        </article>
+
+
+        <article class="case-study-card">
+
+          <h3>Responsive UX</h3>
+
+          <p>
+            Developed layouts that adapt across desktop, tablet, and mobile
+            devices while preserving readability, navigation, and hierarchy.
+          </p>
+
+        </article>
+
+
+        <article class="case-study-card">
+
+          <h3>Accessibility</h3>
+
+          <p>
+            Added keyboard-friendly navigation, focus management,
+            ARIA state handling, Escape behavior, and accessible
+            mobile-menu interactions.
+          </p>
+
+        </article>
+
+
+        <article class="case-study-card">
+
+          <h3>Cloud Infrastructure</h3>
+
+          <p>
+            Configured Azure hosting, custom domains, DNS records,
+            HTTPS, email infrastructure, and deployment workflows supporting
+            the broader professional platform.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- Architecture -->
+    <section class="section">
+
+      <div class="section-heading">
+
+        <p class="eyebrow">Architecture</p>
+
+        <h2>
+          Keep the site simple while the content grows.
+        </h2>
+
+        <p>
+          The architecture intentionally favors a lightweight static
+          implementation while allowing project applications and external
+          resources to remain independently deployed.
+        </p>
+
+      </div>
+
+      <div class="architecture-flow">
+
+        <article class="architecture-node">
+          <p class="card-label">Presentation</p>
+          <h3>HTML + CSS</h3>
+          <p>Semantic pages, responsive layouts, cards, navigation, and visual system.</p>
+        </article>
+
+        <div class="architecture-arrow" aria-hidden="true">
+          ↓
+        </div>
+
+        <article class="architecture-node">
+          <p class="card-label">Interaction</p>
+          <h3>JavaScript</h3>
+          <p>Mobile navigation, focus management, menus, and small UI behaviors.</p>
+        </article>
+
+        <div class="architecture-arrow" aria-hidden="true">
+          ↓
+        </div>
+
+        <article class="architecture-node">
+          <p class="card-label">Hosting</p>
+          <h3>Azure</h3>
+          <p>Cloud delivery for kevincrandall.dev and associated project services.</p>
+        </article>
+
+        <div class="architecture-arrow" aria-hidden="true">
+          ↓
+        </div>
+
+        <article class="architecture-node">
+          <p class="card-label">Project Ecosystem</p>
+          <h3>GitHub + Live Apps</h3>
+          <p>Source repositories, case studies, applications, and academic work.</p>
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- Engineering Decisions -->
+    <section class="section">
+
+      <div class="section-heading">
+
+        <p class="eyebrow">Engineering Decisions</p>
+
+        <h2>
+          Choosing simplicity deliberately.
+        </h2>
+
+      </div>
+
+      <div class="principles-grid">
+
+        <article class="principle-card">
+
+          <h3>Static First</h3>
+
+          <p>
+            The site uses HTML, CSS, and JavaScript directly because its
+            current size does not justify the complexity of a frontend
+            framework or static-site generator.
+          </p>
+
+        </article>
+
+
+        <article class="principle-card">
+
+          <h3>Reusable Design System</h3>
+
+          <p>
+            Shared CSS variables, cards, buttons, spacing, typography,
+            navigation, and page structures create consistency across
+            independently authored pages.
+          </p>
+
+        </article>
+
+
+        <article class="principle-card">
+
+          <h3>Progressive Responsiveness</h3>
+
+          <p>
+            Desktop layouts progressively collapse into touch-friendly
+            mobile experiences rather than simply shrinking the desktop
+            presentation.
+          </p>
+
+        </article>
+
+
+        <article class="principle-card">
+
+          <h3>Accessibility by Design</h3>
+
+          <p>
+            The mobile navigation maintains ARIA state, traps focus while
+            open, supports Escape, restores focus, and collapses nested
+            project navigation appropriately.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- Evolution -->
+    <section class="section case-study-section">
+
+      <div class="case-study-layout">
+
+        <div class="section-heading">
+
+          <p class="eyebrow">Project Evolution</p>
+
+          <h2>
+            Building the site iteratively.
+          </h2>
+
+        </div>
+
+        <div class="case-study-copy">
+
+          <p>
+            The Developer Hub began as a simple landing page and gradually
+            expanded as the goals for the site became clearer. Each new
+            section was added in response to a specific need rather than
+            designing an oversized solution upfront.
+          </p>
+
+          <ul class="case-study-list">
+            <li>Established a reusable visual design system.</li>
+            <li>Added About, Projects, Resume, and Contact experiences.</li>
+            <li>Integrated live applications and source repositories.</li>
+            <li>Introduced engineering case studies for deeper technical context.</li>
+            <li>Separated the professional site from the CS capstone portfolio.</li>
+            <li>Added responsive layouts across the full site.</li>
+            <li>Built an accessible mobile navigation system.</li>
+            <li>Added nested mobile navigation for project case studies.</li>
+            <li>Standardized page headers, footers, metadata, and navigation.</li>
+          </ul>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Challenges -->
+    <section class="section">
+
+      <div class="section-heading">
+
+        <p class="eyebrow">Challenges &amp; Lessons</p>
+
+        <h2>
+          A small site still requires engineering decisions.
+        </h2>
+
+      </div>
+
+      <div class="case-study-role-grid">
+
+        <article class="case-study-card">
+
+          <h3>Consistency</h3>
+
+          <p>
+            Repeated page components reinforced the importance of
+            maintaining common patterns even when using static HTML
+            without reusable framework components.
+          </p>
+
+        </article>
+
+
+        <article class="case-study-card">
+
+          <h3>Responsive Navigation</h3>
+
+          <p>
+            Mobile navigation evolved from simple link wrapping into a
+            purpose-built interaction with nested project navigation,
+            focus control, and keyboard support.
+          </p>
+
+        </article>
+
+
+        <article class="case-study-card">
+
+          <h3>Scope Control</h3>
+
+          <p>
+            The project reinforced that modern tooling should solve
+            an actual problem rather than being introduced simply
+            because it is available.
+          </p>
+
+        </article>
+
+
+        <article class="case-study-card">
+
+          <h3>Content Is Architecture</h3>
+
+          <p>
+            Organizing projects, case studies, professional history,
+            and academic work required the same attention to hierarchy
+            and user needs as the technical implementation.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- Technology -->
+    <section class="section">
+
+      <div class="section-heading">
+
+        <p class="eyebrow">Technology</p>
+
+        <h2>
+          Lightweight frontend. Cloud-hosted delivery.
+        </h2>
+
+      </div>
+
+      <div class="tech-stack case-study-tech" aria-label="Technologies used">
+
+        <span>HTML5</span>
+        <span>CSS3</span>
+        <span>JavaScript</span>
+        <span>Responsive Design</span>
+        <span>Accessibility</span>
+        <span>Azure</span>
+        <span>Git</span>
+        <span>GitHub</span>
+        <span>DNS</span>
+        <span>HTTPS</span>
+        <span>Custom Domains</span>
+        <span>VS Code</span>
+
+      </div>
+
+    </section>
+
+
+    <!-- Final CTA -->
+    <section class="section about-cta">
+
+      <div class="about-cta-content">
+
+        <p class="eyebrow">Explore the Project</p>
+
+        <h2>
+          You're already using it.
+        </h2>
+
+        <p>
+          Continue exploring the Developer Hub to see the projects,
+          professional experience, and engineering work the site was
+          designed to bring together.
+        </p>
+
+        <div class="project-actions">
+
+          <a
+            href="../index.html"
+            class="button primary-button"
+          >
+            Return Home
+          </a>
+
+          <a
+            href="../projects.html"
+            class="button secondary-button"
+          >
+            View Projects
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer class="site-footer">
+
+    <p>
+      &copy; <span id="current-year"></span> Kevin Crandall.
+      All rights reserved.
+    </p>
+
+    <div class="footer-links">
+
+      <a href="../index.html">Home</a>
+      <a href="../about.html">About</a>
+      <a href="../projects.html">Projects</a>
+      <a href="../resume.html">Resume</a>
+      <a href="../contact.html">Contact</a>
+
+      <a
+        href="https://github.com/kcrandall81087"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GitHub
+      </a>
+
+      <a
+        href="https://kevincrandall.me"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        CS Capstone
+      </a>
+
+    </div>
+
+  </footer>
+
+  <script src="../assets/js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1220">
+  <meta name="color-scheme" content="dark">
+
+  <title>Pirate Intelligent Agent Case Study | Kevin Crandall</title>
+
+  <meta
+    name="description"
+    content="Engineering case study for the Pirate Intelligent Agent, a deep reinforcement learning project using Python, TensorFlow, Deep Q-Networks, experience replay, and autonomous pathfinding."
+  >
+
+  <link rel="icon" href="../favicon.ico">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Primary navigation">
+
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="primary-nav-links"
+        aria-label="Toggle navigation menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-links" id="primary-nav-links">
+
+        <a href="../index.html">Home</a>
+        <a href="../about.html">About</a>
+
+        <div class="nav-item">
+          <a
+            class="nav-link-main"
+            href="../projects.html"
+            aria-current="page"
+          >
+            Projects
+          </a>
+
+          <button
+            class="nav-dropdown-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-label="Toggle project case studies"
+            aria-controls="projects-submenu"
+          ></button>
+
+          <div class="nav-submenu" id="projects-submenu">
+            <a href="travlr.html">Travlr Getaways Case Study</a>
+            <a href="pirate-agent.html">Pirate Intelligent Agent Case Study</a>
+            <a href="developer-hub.html">Developer Hub Case Study</a>
+          </div>
+        </div>
+
+        <a href="../resume.html">Resume</a>
+        <a href="../contact.html">Contact</a>
+
+        <a
+          class="external-nav-link"
+          href="https://github.com/kcrandall81087"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
+
+        <a
+          class="external-nav-link"
+          href="https://kevincrandall.me"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          CS Capstone
+        </a>
+
+      </div>
+
+    </nav>
+  </header>
+
+
+  <main>
+
+    <!-- Case Study Hero -->
+    <section class="page-hero case-study-hero">
+
+      <div class="page-hero-content">
+
+        <p class="eyebrow">Engineering Case Study</p>
+
+        <h1>
+          Pirate Intelligent Agent
+          <span>Deep reinforcement learning.</span>
+        </h1>
+
+        <p class="page-intro">
+          An intelligent pathfinding agent trained with a Deep Q-Network
+          to learn navigation strategies through environment interaction,
+          rewards, experience replay, and iterative optimization.
+        </p>
+
+        <div class="hero-actions">
+
+          <a
+            href="https://github.com/kcrandall81087/Pirate-Intelligent-Agent"
+            class="button primary-button"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Source Code
+          </a>
+
+          <a
+            href="https://kevincrandall.me"
+            class="button secondary-button"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            CS Capstone
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Overview -->
+    <section class="section case-study-section">
+
+      <div class="case-study-layout">
+
+        <div class="section-heading">
+
+          <p class="eyebrow">Overview</p>
+
+          <h2>
+            Teaching an agent to find its own solution.
+          </h2>
+
+        </div>
+
+        <div class="case-study-copy">
+
+          <p>
+            The Pirate Intelligent Agent was originally developed during
+            CS-370 at Southern New Hampshire University as an introduction
+            to reinforcement learning and intelligent agent design.
+          </p>
+
+          <p>
+            Rather than being explicitly programmed with the correct path,
+            the agent learns through repeated interaction with its environment.
+            A Deep Q-Network evaluates possible actions, receives feedback
+            through a reward system, and gradually improves its ability to
+            navigate successfully.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Problem -->
+    <section class="section case-study-section">
+
+      <div class="case-study-layout">
+
+        <div class="section-heading">
+
+          <p class="eyebrow">The Problem</p>
+
+          <h2>
+            Learn an effective path without hard-coded instructions.
+          </h2>
+
+        </div>
+
+        <div class="case-study-copy">
+
+          <p>
+            The goal was to create an intelligent agent capable of navigating
+            a maze-like environment and reaching its target through learned
+            behavior rather than a predefined sequence of moves.
+          </p>
+
+          <p>
+            The challenge was balancing exploration and exploitation while
+            designing a training process that allowed the model to learn from
+            successful and unsuccessful decisions without overfitting to a
+            single sequence of actions.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- My Role -->
+    <section class="section">
+
+      <div class="section-heading">
+
+        <p class="eyebrow">My Role</p>
+
+        <h2>
+          Designing and refining the learning process.
+        </h2>
+
+        <p>
+          I worked across the agent's neural-network model, training loop,
+          experience replay process, reward behavior, and performance
+          evaluation.
+        </p>
+
+      </div>
+
+      <div class="case-study-role-grid">
+
+        <article class="case-study-card">
+
+          <h3>Agent Design</h3>
+
+          <p>
+            Defined the relationship between environment states,
+            available actions, rewards, and the neural network used
+            to estimate future value.
+          </p>
+
+        </article>
+
+
+        <article class="case-study-card">
+
+          <h3>Training Logic</h3>
+
+          <p>
+            Implemented and refined the training process across repeated
+            episodes while tracking agent performance and convergence.
+          </p>
+
+        </article>
+
+
+        <article class="case-study-card">
+
+          <h3>Experience Replay</h3>
+
+          <p>
+            Used replay memory to train from previously observed
+            experiences and reduce the instability associated with
+            learning only from sequential interactions.
+          </p>
+
+        </article>
+
+
+        <article class="case-study-card">
+
+          <h3>Performance Evaluation</h3>
+
+          <p>
+            Evaluated training behavior, win rate, convergence,
+            hyperparameters, and opportunities for further improvement.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- Architecture -->
+    <section class="section">
+
+      <div class="section-heading">
+
+        <p class="eyebrow">Architecture</p>
+
+        <h2>
+          A feedback loop between agent, environment, and model.
+        </h2>
+
+        <p>
+          Each interaction produces experience that can be stored,
+          replayed, and used to improve future action selection.
+        </p>
+
+      </div>
+
+      <div class="architecture-flow">
+
+        <article class="architecture-node">
+          <p class="card-label">Environment</p>
+          <h3>Current State</h3>
+          <p>The maze provides the agent's current position and available context.</p>
+        </article>
+
+        <div class="architecture-arrow" aria-hidden="true">
+          ↓
+        </div>
+
+        <article class="architecture-node">
+          <p class="card-label">Model</p>
+          <h3>Deep Q-Network</h3>
+          <p>The neural network estimates the value of available actions.</p>
+        </article>
+
+        <div class="architecture-arrow" aria-hidden="true">
+          ↓
+        </div>
+
+        <article class="architecture-node">
+          <p class="card-label">Action</p>
+          <h3>Agent Decision</h3>
+          <p>The agent selects an action using its exploration strategy.</p>
+        </article>
+
+        <div class="architecture-arrow" aria-hidden="true">
+          ↓
+        </div>
+
+        <article class="architecture-node">
+          <p class="card-label">Learning</p>
+          <h3>Reward &amp; Replay</h3>
+          <p>Experiences are stored and sampled to improve future decisions.</p>
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- Engineering Decisions -->
+    <section class="section">
+
+      <div class="section-heading">
+
+        <p class="eyebrow">Engineering Decisions</p>
+
+        <h2>
+          Improving stability and learning efficiency.
+        </h2>
+
+      </div>
+
+      <div class="principles-grid">
+
+        <article class="principle-card">
+
+          <h3>Deep Q-Learning</h3>
+
+          <p>
+            A neural network approximates action values, allowing the
+            agent to learn behavior across a larger state space than a
+            traditional lookup table would efficiently support.
+          </p>
+
+        </article>
+
+
+        <article class="principle-card">
+
+          <h3>Experience Replay</h3>
+
+          <p>
+            Training from randomized samples of prior experiences reduces
+            correlation between consecutive observations and improves
+            learning stability.
+          </p>
+
+        </article>
+
+
+        <article class="principle-card">
+
+          <h3>Target Updates</h3>
+
+          <p>
+            Periodic target-network updates provide a more stable reference
+            during training and reduce rapid changes in predicted values.
+          </p>
+
+        </article>
+
+
+        <article class="principle-card">
+
+          <h3>Exploration Strategy</h3>
+
+          <p>
+            An epsilon-based strategy balances experimentation with
+            increasingly confident use of actions the agent has already
+            learned to value.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- Beyond Original -->
+    <section class="section case-study-section">
+
+      <div class="case-study-layout">
+
+        <div class="section-heading">
+
+          <p class="eyebrow">Beyond the Original Project</p>
+
+          <h2>
+            Strengthening the training process.
+          </h2>
+
+        </div>
+
+        <div class="case-study-copy">
+
+          <p>
+            The enhanced version expanded the original reinforcement-learning
+            implementation with improvements intended to make training more
+            stable, observable, and repeatable.
+          </p>
+
+          <ul class="case-study-list">
+            <li>Expanded training to support longer learning runs.</li>
+            <li>Implemented experience replay using sampled training batches.</li>
+            <li>Introduced periodic target-network synchronization.</li>
+            <li>Refined early termination behavior during training.</li>
+            <li>Evaluated learning performance using win rate and convergence.</li>
+            <li>Explored hyperparameter tradeoffs affecting learning behavior.</li>
+            <li>Documented opportunities for prioritized replay and reward shaping.</li>
+          </ul>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Challenges -->
+    <section class="section">
+
+      <div class="section-heading">
+
+        <p class="eyebrow">Challenges &amp; Lessons</p>
+
+        <h2>
+          Learning systems behave differently from traditional software.
+        </h2>
+
+      </div>
+
+      <div class="case-study-role-grid">
+
+        <article class="case-study-card">
+
+          <h3>Training Stability</h3>
+
+          <p>
+            Small changes to learning rate, exploration behavior,
+            replay strategy, or training duration could significantly
+            alter learning performance.
+          </p>
+
+        </article>
+
+
+        <article class="case-study-card">
+
+          <h3>Delayed Results</h3>
+
+          <p>
+            Unlike deterministic software, improvements often required
+            evaluating behavior across many episodes rather than expecting
+            immediate confirmation from a single test.
+          </p>
+
+        </article>
+
+
+        <article class="case-study-card">
+
+          <h3>Reward Design</h3>
+
+          <p>
+            Agent behavior reinforced how strongly reward structures
+            influence what a learning system ultimately considers
+            successful behavior.
+          </p>
+
+        </article>
+
+
+        <article class="case-study-card">
+
+          <h3>Evaluation Matters</h3>
+
+          <p>
+            A high-performing model still requires validation,
+            repeatability, and an understanding of why the learned
+            strategy works.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- Technology -->
+    <section class="section">
+
+      <div class="section-heading">
+
+        <p class="eyebrow">Technology</p>
+
+        <h2>
+          Machine learning with Python and TensorFlow.
+        </h2>
+
+      </div>
+
+      <div class="tech-stack case-study-tech" aria-label="Technologies used">
+
+        <span>Python</span>
+        <span>TensorFlow</span>
+        <span>Keras</span>
+        <span>Deep Q-Network</span>
+        <span>Neural Networks</span>
+        <span>Reinforcement Learning</span>
+        <span>Experience Replay</span>
+        <span>NumPy</span>
+        <span>Jupyter Notebook</span>
+
+      </div>
+
+    </section>
+
+
+    <!-- Final CTA -->
+    <section class="section about-cta">
+
+      <div class="about-cta-content">
+
+        <p class="eyebrow">Explore the Project</p>
+
+        <h2>
+          See the agent and the implementation.
+        </h2>
+
+        <p>
+          Explore the source code and project documentation to see
+          how the reinforcement-learning agent was designed and trained.
+        </p>
+
+        <div class="project-actions">
+
+          <a
+            href="https://github.com/kcrandall81087/Pirate-Intelligent-Agent"
+            class="button primary-button"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Source Code
+          </a>
+
+          <a
+            href="../projects.html"
+            class="button secondary-button"
+          >
+            Back to Projects
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer class="site-footer">
+
+    <p>
+      &copy; <span id="current-year"></span> Kevin Crandall.
+      All rights reserved.
+    </p>
+
+    <div class="footer-links">
+
+      <a href="../index.html">Home</a>
+      <a href="../about.html">About</a>
+      <a href="../projects.html">Projects</a>
+      <a href="../resume.html">Resume</a>
+      <a href="../contact.html">Contact</a>
+
+      <a
+        href="https://github.com/kcrandall81087"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GitHub
+      </a>
+
+      <a
+        href="https://kevincrandall.me"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        CS Capstone
+      </a>
+
+    </div>
+
+  </footer>
+
+  <script src="../assets/js/script.js"></script>
+
+</body>
+</html>
