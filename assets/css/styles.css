@@ -598,6 +598,19 @@ select {
     0 0 14px rgba(74, 222, 128, 0.75);
 }
 
+.project-lifecycle {
+  padding: 4px 8px;
+
+  border: 1px solid rgba(74, 222, 128, 0.35);
+  border-radius: 999px;
+
+  color: #bbf7d0;
+  background: rgba(74, 222, 128, 0.08);
+
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+}
+
 .project-card h3,
 .featured-project-content h3 {
   margin: 0;
@@ -666,9 +679,12 @@ select {
   display: grid;
 
   grid-template-columns:
-    repeat(3, minmax(0, 1fr));
+    repeat(2, minmax(0, 1fr));
 
   gap: 24px;
+
+  max-width: 1080px;
+  margin: 0 auto;
 }
 
 
@@ -1344,10 +1360,6 @@ a:focus-visible {
       repeat(2, minmax(0, 1fr));
   }
 
-  .featured-projects {
-    grid-template-columns: 1fr;
-  }
-
   .contact-opportunities-grid {
     grid-template-columns: 1fr;
     gap: 32px;
@@ -1378,7 +1390,8 @@ a:focus-visible {
 @media (max-width: 800px) {
 
   .experience-grid,
-  .contact-grid {
+  .contact-grid,
+  .featured-projects {
     grid-template-columns: 1fr;
   }
 
